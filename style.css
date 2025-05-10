@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;                     /* IZMAIŅA: Pilns augstums */
+    display: flex;                     /* IZMAIŅA: Flex konteiners */
+    justify-content: center;          /* IZMAIŅA: Horizontāli centrēts */
+    align-items: center;              /* IZMAIŅA: Vertikāli centrēts */
+}
+
+.container {
+    background: rgb(140, 241, 179);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    text-align: center;               /* IZMAIŅA: Saturs centrēts tekstuāli */
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type="number"],
+input[readonly] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
